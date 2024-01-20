@@ -368,7 +368,10 @@ html {
 /* ...so you're forced to just leave the letter spacing as is. */
 
 
-
+.center{
+	padding-left: calc(50% - 100% / 2);
+	padding-right: calc(50% - 100% / 2);
+}
 
 @-webkit-keyframes tracking-in-contract {
     0% {
@@ -1044,6 +1047,8 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
+    $width: 100%;
+    $height: 100%;
     .header{
         gap: 50px;
         &__logo{
@@ -1051,6 +1056,13 @@ html {
         }
     }
     .top{
+        &__block{
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: auto;
+        }
         &__title{
             display: flex;
             padding-left: 50px;
@@ -1061,35 +1073,34 @@ html {
             padding-left: 50px;
             max-width: 400px;
         }
-        &__block{
-            flex-direction: column;
+        &__bloc{
+                    display: flex;
             justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
         }
         &__end{
             padding-left: 50px;
         }
         &__img{
-            padding-left: 50px;
-            position: relative;
-            top: 0;
-            left:0;
-             width: 324px;
-            height: 214px;
-            object-fit: cover;
+            display: none;
         }
-        &__img2{
-        position: relative;
-        left: 0px;
-        top: 0px;
-        
-        }
+   
+       
     }
+    
+}
+    
     .production{
+        
         &__description{
             text-align: center;
         }
         &__text1{
             text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
         }
     }
     .adress{
@@ -1110,7 +1121,7 @@ html {
         }
         }
     }
-}
+
 @media only screen and (max-width: 1090px) {
     .top{
         &__img2{
