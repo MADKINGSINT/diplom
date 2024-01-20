@@ -1024,11 +1024,13 @@ html {
     font-family: Arial;
     font-weight: 700;
     flex-basis: 100%;
+    padding-left: 50px;
 }
 
 .adress__text {
     font-size: 14px;
     font-family: Arial;
+    padding-left: 50px;
 }
 
 .adress__text_bold {
@@ -1040,7 +1042,14 @@ html {
     display: flex;
     
 }
+
 @media only screen and (max-width: 576px) {
+    .header{
+        gap: 50px;
+        &__logo{
+            padding-left: 30px;
+        }
+    }
     .top{
         &__title{
             display: flex;
@@ -1068,6 +1077,12 @@ html {
             height: 214px;
             object-fit: cover;
         }
+        &__img2{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        
+        }
     }
     .production{
         &__description{
@@ -1083,16 +1098,28 @@ html {
             max-width: 576px;
             width: auto;
         }
+        &__text_bold {
+            font-family: Arial;
+            font-weight: 700;
+            padding-left: 50px;
+        &__text{
+            padding-left: 50px;
+        }
+        .adress__title{
+            padding-left: 50px;
+        }
+        }
     }
 }
 @media only screen and (max-width: 1090px) {
     .top{
         &__img2{
-            left: 670px;
-            top: 1590px;
+            position: relative;
+            left: 0px;
+            top: 0px;
         }
-        &__img1{
-            padding-left: 100px;
+        &__img{
+            padding-left: 10px;
         }
     }
        
