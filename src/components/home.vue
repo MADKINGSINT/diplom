@@ -1074,8 +1074,8 @@ html {
             max-width: 400px;
         }
         &__bloc{
-                    display: flex;
-            justify-content: center;
+        display: flex;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
 
@@ -1090,7 +1090,7 @@ html {
        
     }
     
-}
+
     
     .production{
         
@@ -1114,16 +1114,23 @@ html {
         &__text_bold {
             font-family: Arial;
             font-weight: 700;
-            padding-left: 50px;
+            padding-left: 5%;
         &__text{
-            padding-left: 50px;
+            padding-left: 5%;
         }
-        .adress__title{
-            padding-left: 50px;
+        &__title{
+            padding-left: 5%;
         }
-        }
+        
     }
+    .adress__title{
+        padding-left: 5%;
+    }
+    .adress__text{
+        padding-left: 5%;
 
+    }
+}
 @media only screen and (max-width: 1090px) {
     .top{
         &__img2{
@@ -1137,5 +1144,5 @@ html {
     }
        
 }
-
+}
 </style>
