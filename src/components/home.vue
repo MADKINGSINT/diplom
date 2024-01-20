@@ -1106,8 +1106,8 @@ html {
     .adress{
         justify-content: center;
         &__img{
-            max-width: 576px;
-            width: auto;
+            width: 100%;
+            height: auto;
         }
         &__text_bold {
             font-family: Arial;
