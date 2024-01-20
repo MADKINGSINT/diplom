@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-        <p class="text"></p>
+        <p class="text text1"></p>
         <p class="text">Название: ООО "Эра Карс"<br>
 
     Юр.адрес: 187021, Ленинградская область, Тосненский р-н,<br>
@@ -66,7 +66,14 @@ export default {
     }
     @media only screen and (max-width: 576px) {
         .text{
-            font-size: 16px;
+            font-size: 14px;
+            justify-content: center;
+            width: 70%;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        .text1{
+            display: none;
         }
     }
 </style>
